@@ -1,0 +1,6 @@
+spring:
+  profiles:
+    active: dev
+app:
+  name: PsnCatalog-Maven
+  description: Catálogo de jogos de Playstation
