@@ -1,0 +1,1 @@
+web: java -jar target/PsnCatalog-Maven-0.0.1-SNAPSHOT.jar
