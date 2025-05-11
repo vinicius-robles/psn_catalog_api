@@ -1,27 +1,13 @@
 spring:
-  config:
-    activate-on-profile: prd
   datasource:
     url: jdbc:postgresql://${PGHOST}:${PGPORT}/${PGDATABASE}
     username: ${PGUSER}
     password: ${PGPASSWORD}
-    driver-class-name: org.postgresql.Driver
   jpa:
-    show-sql: false
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
     properties:
       hibernate:
-        default_schema: public
-        format_sql: false
-    hibernate:
-      ddl-auto: validate
-  api-docs:
-    path: /v3/api-docs
-    packages-to-scan: com.psn.catalog.controller
-  server:
-    port: ${PORT:8080}
-
-logging:
-  level:
-    root: warn
-    com.psn.catalog: info
+        temp:
+          use_jdbc_metadata_defaults: false
+        ddl-auto: validate
