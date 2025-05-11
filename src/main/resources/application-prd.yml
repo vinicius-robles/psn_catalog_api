@@ -4,13 +4,15 @@ spring:
     username: ${PGUSER}
     password: ${PGPASSWORD}
   jpa:
-#    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
     properties:
       hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
+#        dialect: org.hibernate.dialect.PostgreSQLDialect
         default_schema: public
-#        temp:
-#          use_jdbc_metadata_defaults: false
+        temp:
+          use_jdbc_metadata_defaults: false
     hibernate:
       ddl-auto: validate
+  server:
+    port: ${PORT:8080}
