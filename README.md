@@ -1,5 +1,5 @@
 # PsnCatalogAPI
-Sistema para catalogar jogos PlayStation, incluindo detalhes como plataformas, preços e avaliações médias.
+Sistema para catalogar jogos PlayStation, incluindo detalhes preços, data de lançamento e desenvolvedora.
 
 ```mermaid
 classDiagram
