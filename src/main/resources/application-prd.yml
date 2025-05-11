@@ -14,6 +14,13 @@ spring:
           use_jdbc_metadata_defaults: false
     hibernate:
       ddl-auto: validate
+    swagger-ui:
+      path: /swagger-ui.html
+      tags-sorter: alpha
+      operations-sorter: alpha
+    api-docs:
+      path: /v3/api-docs
+      packages-to-scan: com.psn.catalog.controller
+
   server:
     port: ${PORT:8080}
-#    forward-headers-strategy: framework
