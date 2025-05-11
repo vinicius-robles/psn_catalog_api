@@ -1,6 +1,8 @@
 spring:
   profiles:
-    active: dev
+    active: dev  # Perfil ativo por padrão (pode ser sobrescrito)
+
+# Configurações que são comuns a todos os ambientes
 app:
   name: PsnCatalog-Maven
-  description: Catálogo de jogos de Playstation
+  description: Je catálogo de jogos de Playstation

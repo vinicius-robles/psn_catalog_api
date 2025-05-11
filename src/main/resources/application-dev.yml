@@ -24,6 +24,7 @@ spring:
   api-docs:
     path: /v3/api-docs
     packages-to-scan: com.psn.catalog.controller
+
 logging:
   level:
     root: info
