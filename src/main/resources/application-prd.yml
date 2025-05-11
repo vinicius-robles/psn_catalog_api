@@ -8,6 +8,9 @@ spring:
     open-in-view: false
     properties:
       hibernate:
-        temp:
-          use_jdbc_metadata_defaults: false
-        ddl-auto: validate
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        default_schema: public
+#        temp:
+#          use_jdbc_metadata_defaults: false
+    hibernate:
+      ddl-auto: validate
