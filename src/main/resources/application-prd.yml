@@ -16,4 +16,4 @@ spring:
       ddl-auto: validate
   server:
     port: ${PORT:8080}
-    forward-headers-strategy: framework
+#    forward-headers-strategy: framework
